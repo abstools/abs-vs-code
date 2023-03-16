@@ -1,189 +1,189 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Abs",
-	"patterns": [
-		{
-			"include": "#comments"
-		},
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#numbers"
-		},	
-		{
-			"include": "#strings"
-		},
-		{
-			"include": "#operators"
-		},
-		{
-			"include": "#constants"
-		},
-		{
-			"include": "#keywords"
-		},
-		{
-			"include": "#functions"
-		},
-		{
-			"include": "#variables"
-		},
-		{
-			"include": "#types"
-		}
-	],
-	"repository": {
-		"comments": {
-    	    "patterns": [
-	            {
-    	            "begin": "//",
-        	        "end": "\\n",
-            	    "name": "comment.line.double-slash.abs"
-	            },
-            	{
-                	"begin": "/\\*",
-	                "beginCaptures": {
-    	                "0": {
-							"name": "punctuation.definition.comment.begin.abs"
-						}
-					},
-	                "end": "\\*/",
-	                "endCaptures": {
-        	            "0": {
-							"name": "punctuation.definition.comment.end.abs"
-						}
-					},
-	                "name": "comment.block.abs"
-	            }
-			]
-		},
-		"numbers": {
-        	"patterns": [
-				{
-	                "match": "\\b[1-9][0-9]*\\b",
-    	            "name": "constant.numeric.integer.abs"
-        	    },
-	            {
-    	            "match": "\\b[0-9]?\\.[0-9]+((E|e)(\\+|-)?[0-9]+)?\\b",
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Abs",
+    "patterns": [
+        {
+            "include": "#comments"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#numbers"
+        },
+        {
+            "include": "#strings"
+        },
+        {
+            "include": "#operators"
+        },
+        {
+            "include": "#constants"
+        },
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#functions"
+        },
+        {
+            "include": "#variables"
+        },
+        {
+            "include": "#types"
+        }
+    ],
+    "repository": {
+        "comments": {
+            "patterns": [
+                {
+                    "begin": "//",
+                    "end": "\\n",
+                    "name": "comment.line.double-slash.abs"
+                },
+                {
+                    "begin": "/\\*",
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.comment.begin.abs"
+                        }
+                    },
+                    "end": "\\*/",
+                    "endCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.comment.end.abs"
+                        }
+                    },
+                    "name": "comment.block.abs"
+                }
+            ]
+        },
+        "numbers": {
+            "patterns": [
+                {
+                    "match": "\\b[1-9][0-9]*\\b",
+                    "name": "constant.numeric.integer.abs"
+                },
+                {
+                    "match": "\\b[0-9]?\\.[0-9]+((E|e)(\\+|-)?[0-9]+)?\\b",
                     "name": "constant.numeric.float.abs"
-	            }
-    	    ]
-		},
-		"strings": {
-			"name": "string.quoted.double.abs",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.abs",
-					"match": "\\\\."
-				}
-			]
-		},
-		"operators": {
-        	"patterns": [
-	            {
-    	            "match": "<\\=|>\\=|\\=\\=|<|>|\\!\\=",
-                	"name": "keyword.operator.comparison.abs"
-	            },
-    	        {
-        	        "match": "\\=",
-            	    "name": "keyword.operator.assignment.abs"
-	            },
-    	        {
-        	        "match": "\\+|\\-|\\*|/|%",
-            	    "name": "keyword.operator.arithmetic.abs"
-	            },
-    	        {
-        	        "match": "&&|\\|\\||!|\\->|<\\->",
-            	    "name": "keyword.operator.logical.abs"
-	            }
-			]
-		},
-		"constants": {
-        	"patterns": [
-	            {
-    	            "match": "\\b(True|False|null|this|Nil|Cons)\\b",
-	                "name": "constant.language.abs"
-	            }
-			]
-		},
-		"keywords": {
-        	"patterns": [
-	            {
-    	            "match": "\\b(import|from)\\b",
-	                "name": "keyword.control.import.abs"
-	            },
-	            {
-    	            "match": "\\b(if|then|else)\\b",
-	                "name": "keyword.control.conditional.abs"
-	            },
-	            {
-    	            "match": "\\b(while|foreach)\\b",
-        	        "name": "keyword.control.repeat.abs"
-	            },
-	            {
-    	            "match": "\\b(try|catch|finally)\\b",
-        	        "name": "keyword.control.exception.abs"
-            	},
-	            {
-    	            "match": "\\b(return|throw|die|await|suspend)\\b",
-        	        "name": "keyword.control.statement.abs"
-            	},
-	            {
-    	            "match": "\\b(module|export|data|type|def|interface|class|exception|case|=>|new|local|extends|implements|recover|delta|adds|modifies|removes|uses|hasField|hasMethod|hasInterface|productline|features|core|after|when|root|extension|group|opt|oneof|allof|ifin|ifout|exclude|require|product|let|in|assert|get|skip|original|movecogto|duration)\\b",
-        	        "name": "keyword.other.abs"
-            	}
-			]
-		},
-		"functions": {
-        	"patterns": [
-	            {
-    	            "match": "\\b([a-z]\\w+)\\s*(\\(|\\[)",
-        	        "captures": {
-            	        "1": {
-							"name": "entity.name.function.abs"
-						}
-					},
-	                "name": "meta.function.abs"
-    	        },
-	            {
-    	            "match": "\\b([A-Z]\\w+)\\s*\\(",
-        	        "captures": {
-            	        "1": {
-							"name": "entity.name.function.constructor.abs"
-						}
-					},
-	                "name": "meta.constructor.abs"
-    	        }
-			]
-		},
-		"variables": {
-     	    "patterns": [
-	            {
-    	            "match": "\\b(this)\\.([a-z]\\w*)\\b",
-        	        "captures": {
-            	        "2": {
-							"name": "variable.field.abs"
-						}
-					},
-	                "name": "meta.field.abs"
-    	        },
-	            {
-    	            "match": "\\b[a-z]\\w*\\b",
-        	        "name": "variable.abs"
-            	}
-			]
-		},
-		"types": {
-     	   "patterns": [
-	            {
-    	            "match": "\\b[A-Z]\\w*\\b",
-	                "name": "class.abs"
-	            }
-			]
-		}
-	},
-	"scopeName": "source.abs"
+                }
+            ]
+        },
+        "strings": {
+            "name": "string.quoted.double.abs",
+            "begin": "\"",
+            "end": "\"",
+            "patterns": [
+                {
+                    "name": "constant.character.escape.abs",
+                    "match": "\\\\."
+                }
+            ]
+        },
+        "operators": {
+            "patterns": [
+                {
+                    "match": "<\\=|>\\=|\\=\\=|<|>|\\!\\=",
+                    "name": "keyword.operator.comparison.abs"
+                },
+                {
+                    "match": "\\=",
+                    "name": "keyword.operator.assignment.abs"
+                },
+                {
+                    "match": "\\+|\\-|\\*|/|%",
+                    "name": "keyword.operator.arithmetic.abs"
+                },
+                {
+                    "match": "&&|\\|\\||!|\\->|<\\->",
+                    "name": "keyword.operator.logical.abs"
+                }
+            ]
+        },
+        "constants": {
+            "patterns": [
+                {
+                    "match": "\\b(True|False|null|this|Nil|Cons)\\b",
+                    "name": "constant.language.abs"
+                }
+            ]
+        },
+        "keywords": {
+            "patterns": [
+                {
+                    "match": "\\b(import|from)\\b",
+                    "name": "keyword.control.import.abs"
+                },
+                {
+                    "match": "\\b(if|then|else)\\b",
+                    "name": "keyword.control.conditional.abs"
+                },
+                {
+                    "match": "\\b(while|foreach)\\b",
+                    "name": "keyword.control.repeat.abs"
+                },
+                {
+                    "match": "\\b(try|catch|finally)\\b",
+                    "name": "keyword.control.exception.abs"
+                },
+                {
+                    "match": "\\b(return|throw|die|await|suspend)\\b",
+                    "name": "keyword.control.statement.abs"
+                },
+                {
+                    "match": "\\b(module|export|data|type|def|interface|class|exception|case|=>|new|local|extends|implements|recover|delta|adds|modifies|removes|uses|hasField|hasMethod|hasInterface|productline|features|core|after|when|root|extension|group|opt|oneof|allof|ifin|ifout|exclude|require|product|let|in|assert|get|skip|original|movecogto|duration)\\b",
+                    "name": "keyword.other.abs"
+                }
+            ]
+        },
+        "functions": {
+            "patterns": [
+                {
+                    "match": "\\b([a-z]\\w+)\\s*(\\(|\\[)",
+                    "captures": {
+                        "1": {
+                            "name": "entity.name.function.abs"
+                        }
+                    },
+                    "name": "meta.function.abs"
+                },
+                {
+                    "match": "\\b([A-Z]\\w+)\\s*\\(",
+                    "captures": {
+                        "1": {
+                            "name": "entity.name.function.constructor.abs"
+                        }
+                    },
+                    "name": "meta.constructor.abs"
+                }
+            ]
+        },
+        "variables": {
+            "patterns": [
+                {
+                    "match": "\\b(this)\\.([a-z]\\w*)\\b",
+                    "captures": {
+                        "2": {
+                            "name": "variable.field.abs"
+                        }
+                    },
+                    "name": "meta.field.abs"
+                },
+                {
+                    "match": "\\b[a-z]\\w*\\b",
+                    "name": "variable.abs"
+                }
+            ]
+        },
+        "types": {
+            "patterns": [
+                {
+                    "match": "\\b[A-Z]\\w*\\b",
+                    "name": "class.abs"
+                }
+            ]
+        }
+    },
+    "scopeName": "source.abs"
 }
