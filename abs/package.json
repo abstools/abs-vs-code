@@ -2,6 +2,7 @@
     "name": "abs",
     "displayName": "abs",
     "description": "Support for the Abs language",
+    "icon": "images/ABS_logo.png",
     "version": "0.0.2",
     "publisher": "abs",
     "repository": "https://github.com/abstools/abs-vs-code/",
