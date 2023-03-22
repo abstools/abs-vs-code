@@ -1,18 +1,18 @@
 # Change Log
 
-<!-- All notable changes to the "abs" extension will be documented in this file. -->
+All notable changes to the "abs" extension will be documented in this file.
 
-<!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
+Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-<!-- ## [Unreleased] -->
+## [Unreleased]
 
-<!-- ### Added -->
+### Added
 
-<!-- ### Changed -->
+### Changed
 
-<!-- ### Removed -->
+### Removed
 
-<!-- ### Fixed -->
+### Fixed
 
 ## Version [0.0.2] 
 

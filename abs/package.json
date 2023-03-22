@@ -18,7 +18,7 @@
         "url": "https://github.com/abstools/abs-vs-code/issues"
     },
     "engines": {
-        "vscode": "^1.24.0"
+        "vscode": "^1.63.0"
     },
     "categories": [
         "Programming Languages"
