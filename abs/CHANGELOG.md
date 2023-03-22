@@ -1,25 +1,28 @@
 # Change Log
-All notable changes to the "abs" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+<!-- All notable changes to the "abs" extension will be documented in this file. -->
 
-## [Unreleased]
+<!-- Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file. -->
 
-### Added
+<!-- ## [Unreleased] -->
 
-### Changed
+<!-- ### Added -->
 
-### Removed
+<!-- ### Changed -->
 
-### Fixed
+<!-- ### Removed -->
 
-## [0.0.2] - 2023-03-16
+<!-- ### Fixed -->
+
+## Version [0.0.2] 
+
+Released 2023-03-16
 
 ### Added
 
 - Added support for template strings.
 
-- Refined auto-closing behavior for characters ", `
+- Refined auto-closing behavior for strings (`"`) and template strings (`` ` ``)
 
 ## Version 0.0.1
 - Initial release

@@ -1,11 +1,22 @@
 {
     "name": "abs",
-    "displayName": "abs",
+    "displayName": "ABS",
     "description": "Support for the Abs language",
     "icon": "images/ABS_logo.png",
     "version": "0.0.2",
-    "publisher": "abs",
-    "repository": "https://github.com/abstools/abs-vs-code/",
+    "publisher": "abs-models-org",
+    "author": {
+        "name": "Rudolf Schlatte"
+    },
+    "license": "SEE LICENSE IN LICENSE",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/abstools/abs-vs-code/"
+    },
+    "homepage": "https://github.com/abstools/abs-vs-code",
+    "bugs": {
+        "url": "https://github.com/abstools/abs-vs-code/issues"
+    },
     "engines": {
         "vscode": "^1.24.0"
     },
