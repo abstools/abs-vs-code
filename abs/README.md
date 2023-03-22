@@ -9,6 +9,10 @@ Currently this extension provides only syntax highlighting.
 
 ## Release Notes
 
+### 0.0.3
+
+- Automatically publish `.vsix` file on github.
+
 ### 0.0.2
 
 - Added support for template strings.
