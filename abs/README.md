@@ -9,6 +9,10 @@ Currently this extension provides only syntax highlighting.
 
 ## Release Notes
 
+### 0.0.4
+
+Add support for snippets.
+
 ### 0.0.3
 
 - Automatically publish `.vsix` file on github.

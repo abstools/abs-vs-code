@@ -8,13 +8,17 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
-- Add snippets for common language constructs.
-
 ### Changed
 
 ### Removed
 
 ### Fixed
+
+## [0.0.4]
+
+### Added
+
+- Add snippets for common language constructs.
 
 ## [0.0.3]
 
@@ -36,7 +40,8 @@ Released 2023-03-16
 
 - Initial release
 
-[Unreleased]: https://github.com/abstools/abs-vs-code/compare/HEAD...v0.0.3
+[Unreleased]: https://github.com/abstools/abs-vs-code/compare/HEAD...v0.0.4
+[0.0.4]: https://github.com/abstools/abs-vs-code/compare/v0.0.4...v0.0.3
 [0.0.3]: https://github.com/abstools/abs-vs-code/compare/v0.0.3...v0.0.2
 [0.0.2]: https://github.com/abstools/abs-vs-code/compare/v0.0.2...v0.0.1
 [0.0.1]: https://github.com/abstools/abs-vs-code/commit/11b912290b0e26f521b4bc57608d690bff13ce17
