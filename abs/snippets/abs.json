@@ -1,0 +1,127 @@
+{
+    "Case": {
+        "prefix": ["case"],
+        "body": [
+            "case ${1:expression} in {",
+            "    ${2:pattern} => ${3:expression}",
+            "  | ${4:pattern} => ${0:expression}",
+            "}"
+        ],
+        "description": "Case expression"
+    },
+    "Class": {
+        "prefix": ["class"],
+        "body": [
+            "class ${1:ClassName} ${2:implements ${3:InterfaceName} }{",
+            "    $0",
+            "}"
+        ],
+        "description": "Class definition"
+    },
+    "Data": {
+        "prefix": ["data"],
+        "body": [
+            "data ${1:DataTypeName} = $1${2:(${3:Parameter})};"
+        ],
+        "description": "Datatype definition"
+    },
+    "Function": {
+        "prefix": ["def"],
+        "body": [
+            "def ${1:ReturnType} ${2:function_name}${3:<${4:A}>}(${5:parameter}) = ${0:expression};"
+        ],
+        "description": "Function definition"
+    },
+    "Exception": {
+        "prefix": ["exception"],
+        "body": [
+            "exception ${1:ExceptionName}${2:(${3:Type}${4: ${5:name}})};"
+        ],
+        "description": "Exception definition"
+    },
+    "Foreach": {
+        "prefix": ["foreach"],
+        "body": [
+            "foreach (${1:value}${2:, ${3:index}} in ${4:list}) {",
+            "    $0",
+            "}"
+        ],
+        "description": "Foreach loop"
+    },
+    "Interface": {
+        "prefix": ["interface"],
+        "body": [
+            "interface ${1:InterfaceName} ${2:extends ${3:OtherInterface} }{",
+            "    $0",
+            "}"
+        ],
+        "description": "Interface definition"
+    },
+    "Let": {
+        "prefix": ["let"],
+        "body": [
+            "let (${1:type} ${2:variable}) = ${3:expression}${4:, (${5:type} ${6:variable}) = ${7:expression}} in",
+            "    ${0:expression}"
+        ],
+        "description": "Let expression"
+    },
+    "Module": {
+        "prefix": ["module"],
+        "body": [
+            "module ${1:ModuleName};",
+            "${2:import * from OtherModule;}",
+            "${3:export Name, OtherName;}"
+        ],
+        "description": "Module declaration"
+    },
+    "Recover": {
+        "prefix": ["recover"],
+        "body": [
+            "recover {",
+            "    ${1:Exception} => {",
+            "      ${0:skip;}",
+            "    }",
+            "}"
+        ],
+        "description": "Recover block"
+    },
+    "Switch": {
+        "prefix": ["switch"],
+        "body": [
+            "switch (${1:expression}) {",
+            "    ${2:pattern} => ${3:statement}",
+            "    ${4:pattern} => ${0:statement}",
+            "}"
+        ],
+        "description": "Switch statement"
+    },
+    "Try": {
+        "prefix": ["try"],
+        "body": [
+            "try {",
+            "    ${1:statement}",
+            "} catch {",
+            "    ${2:exception} => ${3:statement}",
+            "}${4: finally {",
+            "    $0",
+            "}}"
+        ],
+        "description": "Try-catch-finally statement"
+    },
+    "Type": {
+        "prefix": ["type"],
+        "body": [
+            "type ${1:SynonymName} = ${2:DataType};"
+        ],
+        "description": "Type synonym declaration"
+    },
+    "While": {
+        "prefix": ["while"],
+        "body": [
+            "while (${1:expression}) {",
+            "    $0",
+            "}"
+        ],
+        "description": "While loop"
+    }
+}

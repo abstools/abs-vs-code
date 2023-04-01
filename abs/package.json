@@ -34,6 +34,12 @@
             "language": "abs",
             "scopeName": "source.abs",
             "path": "./syntaxes/abs.tmLanguage.json"
-        }]
+        }],
+        "snippets": [
+            {
+                "language": "abs",
+                "path": "./snippets/abs.json"
+            }
+        ]
     }
 }

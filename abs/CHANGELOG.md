@@ -8,6 +8,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
+- Add snippets for common language constructs.
+
 ### Changed
 
 ### Removed
