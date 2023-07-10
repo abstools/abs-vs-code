@@ -77,8 +77,16 @@
                 },
                 "abs.backend": {
                     "type": "string",
-                    "enum": ["--erlang", "--java", "--maude"],
-                    "enumDescriptions": ["Erlang", "Java", "Maude"],
+                    "enum": [
+                        "--erlang",
+                        "--java",
+                        "--maude"
+                    ],
+                    "enumDescriptions": [
+                        "Erlang",
+                        "Java",
+                        "Maude"
+                    ],
                     "default": "--erlang",
                     "description": "The default backend for code generation."
                 },
@@ -101,6 +109,7 @@
         "lint": "eslint src --ext ts"
     },
     "dependencies": {
+        "child_process": "^1.0.2",
         "path": "^0.12.7",
         "which": "^3.0.1"
     },
