@@ -8,18 +8,22 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
+### Changed
+
+### Removed
+
+### Fixed
+
+## [0.0.5]
+
+### Added
+
 - Added a command "ABS: Compile File" to compile the current file.
 
 - Added extension options:
   - `abs.compileCommand`: the command to invoke the ABS compiler.
   - `abs.backend`: The default target language to use.
   - `abs.compileOptions`: An array of additional arguments for the compiler.
-
-### Changed
-
-### Removed
-
-### Fixed
 
 ## [0.0.4]
 
@@ -47,7 +51,8 @@ Released 2023-03-16
 
 - Initial release
 
-[Unreleased]: https://github.com/abstools/abs-vs-code/compare/HEAD...v0.0.4
+[Unreleased]: https://github.com/abstools/abs-vs-code/compare/HEAD...v0.0.5
+[0.0.5]: https://github.com/abstools/abs-vs-code/compare/v0.0.5...v0.0.4
 [0.0.4]: https://github.com/abstools/abs-vs-code/compare/v0.0.4...v0.0.3
 [0.0.3]: https://github.com/abstools/abs-vs-code/compare/v0.0.3...v0.0.2
 [0.0.2]: https://github.com/abstools/abs-vs-code/compare/v0.0.2...v0.0.1
