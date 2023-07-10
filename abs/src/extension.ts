@@ -7,6 +7,16 @@ export function activate(context: vscode.ExtensionContext) {
 
     const diagnosticCollection = vscode.languages.createDiagnosticCollection('ABS diagnostics');
 
+    vscode.workspace.onDidChangeTextDocument((e: vscode.TextDocumentChangeEvent) => {
+        if (e.contentChanges.length > 0 && diagnosticCollection.has(e.document.uri)) {
+            const line = e.contentChanges[0].range.start.line;
+            const lineDiagnostics = diagnosticCollection.get(e.document.uri)?.filter(diagnostic => diagnostic.range.start.line !== line);
+            if (lineDiagnostics !== undefined) {
+                diagnosticCollection.set(e.document.uri, lineDiagnostics);
+            }
+        }
+    });
+
     const compileCommandHandler = () => {
         const editor = vscode.window.activeTextEditor;
         if (!editor) {
