@@ -4,7 +4,21 @@ This repository adds support for the Abs language in Visual Studio Code.
 
 ## Features
 
-Syntax highlighting only, for now.
+Syntax highlighting and compiling single-file models.
+
+## Configuration
+
+To compile ABS code inside VS Code, set the following options:
+
+- `abs.compileCommand`: If the `absc` command is not in your path, set this
+  option to the command that starts the ABS compiler.
+- `abs.backend`: One of `--erlang`, `--java`, `--maude`.
+- `abs.compileOptions`: This contains a list of options to pass to the
+  compiler.  See the output of `absc -h` for a list of applicable options.
+
+Note: to run the ABS compiler from a Jar file (typically `absfrontend.jar`)
+instead of via the `absc` script, set `abs.compileCommand` to `java` and add
+two items to `abs.compileOptions`: `-jar` and `/path/to/absfrontend.jar`.
 
 ## Installing
 

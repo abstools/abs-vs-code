@@ -8,6 +8,13 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
+- Added a command "ABS: Compile File" to compile the current file.
+
+- Added extension options:
+  - `abs.compileCommand`: the command to invoke the ABS compiler.
+  - `abs.backend`: The default target language to use.
+  - `abs.compileOptions`: An array of additional arguments for the compiler.
+
 ### Changed
 
 ### Removed
