@@ -8,11 +8,16 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
+- Expressions inside template strings are now colored distrinctly from the
+  surrounding string content.
+
 ### Changed
 
 ### Removed
 
 ### Fixed
+
+- Strings and template strings are now colored properly.  (#5)
 
 ## [0.0.5]
 

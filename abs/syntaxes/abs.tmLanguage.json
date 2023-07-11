@@ -67,7 +67,7 @@
                 }
             ]
         },
-        "string": {
+        "strings": {
             "patterns": [
                 {
                     "include": "#qstring-double"
@@ -93,9 +93,14 @@
                 "2": {
                     "name": "invalid.illegal.newline.abs"
                 }
-            }
+            },
+            "patterns": [
+                {
+                    "name": "constant.character.escape.abs",
+                    "match": "\\\\."
+                }
+            ]
         },
-
         "template": {
             "contentName": "string.template.abs",
             "begin": "`",
@@ -111,6 +116,10 @@
                 }
             },
             "patterns": [
+                {
+                    "name": "constant.character.escape.abs",
+                    "match": "\\\\\\$|\\\\`"
+                },
                 {
                     "include": "#template-substitution-element"
                 }

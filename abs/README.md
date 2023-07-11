@@ -5,13 +5,18 @@ an active object modeling language.
 
 ## Features
 
-Currently this extension provides only syntax highlighting.
+This extension provides syntax highlighting and support for compiling an ABS
+file from inside the editor.
 
 ## Release Notes
 
+### 0.0.5
+
+- Add initial support for compiling an ABS file.
+
 ### 0.0.4
 
-Add support for snippets.
+- Add support for snippets.
 
 ### 0.0.3
 
