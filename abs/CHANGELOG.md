@@ -8,12 +8,18 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
-- Expressions inside template strings are now colored distrinctly from the
-  surrounding string content.
-
 ### Changed
 
 ### Removed
+
+### Fixed
+
+## [0.0.6]
+
+### Added
+
+- Expressions inside template strings (delimited by $) now have a different
+  color than the surrounding string content.
 
 ### Fixed
 
@@ -56,7 +62,8 @@ Released 2023-03-16
 
 - Initial release
 
-[Unreleased]: https://github.com/abstools/abs-vs-code/compare/HEAD...v0.0.5
+[Unreleased]: https://github.com/abstools/abs-vs-code/compare/HEAD...v0.0.6
+[0.0.6]: https://github.com/abstools/abs-vs-code/compare/v0.0.6...v0.0.5
 [0.0.5]: https://github.com/abstools/abs-vs-code/compare/v0.0.5...v0.0.4
 [0.0.4]: https://github.com/abstools/abs-vs-code/compare/v0.0.4...v0.0.3
 [0.0.3]: https://github.com/abstools/abs-vs-code/compare/v0.0.3...v0.0.2

@@ -10,6 +10,10 @@ file from inside the editor.
 
 ## Release Notes
 
+### 0.0.6
+
+- Fix string coloring, highlight expressions inside template strings.
+
 ### 0.0.5
 
 - Add initial support for compiling an ABS file.
