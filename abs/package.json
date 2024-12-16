@@ -3,7 +3,7 @@
     "displayName": "ABS",
     "description": "Support for the Abs language",
     "icon": "images/ABS_logo.png",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "publisher": "abs-models-org",
     "author": {
         "name": "Rudolf Schlatte"
@@ -18,7 +18,7 @@
         "url": "https://github.com/abstools/abs-vs-code/issues"
     },
     "engines": {
-        "vscode": "^1.79.0"
+        "vscode": "^1.95.3"
     },
     "categories": [
         "Programming Languages"
@@ -87,7 +87,7 @@
                         "Java",
                         "Maude"
                     ],
-                    "default": "--erlang",
+                    "default": "--java",
                     "description": "The default backend for code generation."
                 },
                 "abs.compileOptions": {
@@ -106,19 +106,25 @@
         "compile": "tsc -p ./",
         "watch": "tsc -watch -p ./",
         "pretest": "npm run compile && npm run lint",
-        "lint": "eslint src --ext ts"
+        "lint": "eslint src --ext ts",
+        "test": "vscode-test"
+    },
+    "dependencies": {
+        "child_process": "^1.0.2",
+        "path": "^0.12.7",
+        "which": "^3.0.1"
     },
     "devDependencies": {
-        "@types/node": "^20.4.1",
-        "@types/vscode": "^1.79.1",
+        "@types/vscode": "^1.95.3",
+        "@types/mocha": "^10.0.10",
+        "@types/node": "20.x",
         "@types/which": "^3.0.0",
-        "@typescript-eslint/eslint-plugin": "^5.60.1",
-        "@typescript-eslint/parser": "^5.60.1",
-        "child_process": "^1.0.2",
-        "eslint": "^8.43.0",
-        "path": "^0.12.7",
-        "typescript": "^5.1.6",
-        "vscode": "^0.10.7",
-        "which": "^3.0.1"
+        "@typescript-eslint/eslint-plugin": "^8.17.0",
+        "@typescript-eslint/parser": "^8.17.0",
+        "@vscode/test-cli": "^0.0.10",
+        "@vscode/test-electron": "^2.4.1",
+        "typescript": "^5.7.2",
+        "eslint": "^9.16.0",
+        "vscode": "^0.10.7"
     }
 }
