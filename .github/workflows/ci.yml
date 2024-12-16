@@ -1,0 +1,44 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macOS-latest, ubuntu-latest, windows-latest]
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '23.4.0'
+    - name: Install vsce
+      run: |
+        npm install -g vsce
+    - name: Install dependencies
+      working-directory: abs
+      run: |
+        npm install
+    - name: Build
+      working-directory: abs
+      run: |
+        npm run vscode:prepublish
+        vsce package
+    - name: Check
+      working-directory: abs
+      run: npm run lint
+    - name: Test Non-Linux
+      working-directory: abs
+      if: matrix.os != 'ubuntu-latest'
+      run: npm test --silent
+    - name: Test Linux
+      working-directory: abs
+      if: matrix.os == 'ubuntu-latest'
+      run: xvfb-run --auto-servernum npm test --silent
+    # - name: Upload artifact
+    #   if: matrix.os == 'ubuntu-latest'
+    #   uses: actions/upload-artifact@v4
+    #   with:
+    #     name: abs-ci.vsix
+    #     path: ${{ github.workspace }}/abs/abs-*.vsix
