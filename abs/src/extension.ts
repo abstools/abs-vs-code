@@ -85,7 +85,7 @@ export function activate(context: vscode.ExtensionContext) {
                         compileOutput.appendLine("ABS compilation finished.");
                     }
                 });
-    }
+    };
 
     context.subscriptions.push(vscode.commands.registerCommand("abs.compile", compileCommandHandler));
 }
