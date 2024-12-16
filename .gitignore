@@ -1,3 +1,5 @@
 node_modules
 *.vsix
 /abs/out/
+/abs/.vscode-test
+/notes.org
