@@ -10,6 +10,12 @@ file from inside the editor.
 
 ## Release Notes
 
+### 0.0.7
+
+- Fix ABS compilation command.
+
+- Change default code generation target to Java.
+
 ### 0.0.6
 
 - Fix string coloring, highlight expressions inside template strings.
