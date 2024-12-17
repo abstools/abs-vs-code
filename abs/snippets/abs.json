@@ -39,6 +39,27 @@
         ],
         "description": "Exception definition"
     },
+    "Filter": {
+        "prefix": ["filter"],
+        "body": [
+            "filter((${1:type} ${2:element}) => ${3:expression})(${4:list})"
+        ],
+        "description": "Filter function call"
+    },
+    "Foldl": {
+        "prefix": ["foldl"],
+        "body": [
+            "foldl((${1:type} ${2:element}, ${3:type} ${4:accumulator}) => ${5:expression})(${6:list}, ${7:initval})"
+        ],
+        "description": "Foldl function call"
+    },
+    "Foldr": {
+        "prefix": ["foldr"],
+        "body": [
+            "foldr((${1:type} ${2:element}, ${3:type} ${4:accumulator}) => ${5:expression})(${6:list}, ${7:initval})"
+        ],
+        "description": "Foldl function call"
+    },
     "Foreach": {
         "prefix": ["foreach"],
         "body": [
@@ -64,6 +85,13 @@
             "    ${0:expression}"
         ],
         "description": "Let expression"
+    },
+    "Map": {
+        "prefix": ["map"],
+        "body": [
+            "map((${1:type} ${2:element}) => ${3:expression})(${4:list})"
+        ],
+        "description": "Map function call"
     },
     "Module": {
         "prefix": ["module"],
