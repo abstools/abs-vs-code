@@ -10,6 +10,10 @@ file from inside the editor.
 
 ## Release Notes
 
+### 0.0.8
+
+- Add snippets for `map`, `filter`, `foldl`, `foldr`.
+
 ### 0.0.7
 
 - Fix ABS compilation command.

@@ -3,7 +3,7 @@
     "displayName": "ABS",
     "description": "Support for the Abs language",
     "icon": "images/ABS_logo.png",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "publisher": "abs-models-org",
     "author": {
         "name": "Rudolf Schlatte"
