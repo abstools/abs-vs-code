@@ -8,13 +8,17 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 
-- Add snippets for `map`, `filter`, `foldl`, `foldr`.
-
 ### Changed
 
 ### Removed
 
 ### Fixed
+
+## [0.0.8]
+
+### Added
+
+- Add snippets for `map`, `filter`, `foldl`, `foldr`.
 
 ## [0.0.7]
 
@@ -76,7 +80,8 @@ Released 2023-03-16
 
 - Initial release
 
-[Unreleased]: https://github.com/abstools/abs-vs-code/compare/HEAD...v0.0.7
+[Unreleased]: https://github.com/abstools/abs-vs-code/compare/HEAD...v0.0.8
+[0.0.8]: https://github.com/abstools/abs-vs-code/compare/v0.0.8...v0.0.7
 [0.0.7]: https://github.com/abstools/abs-vs-code/compare/v0.0.7...v0.0.6
 [0.0.6]: https://github.com/abstools/abs-vs-code/compare/v0.0.6...v0.0.5
 [0.0.5]: https://github.com/abstools/abs-vs-code/compare/v0.0.5...v0.0.4
