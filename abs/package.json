@@ -3,7 +3,7 @@
     "displayName": "ABS",
     "description": "Support for the Abs language",
     "icon": "images/ABS_logo.png",
-    "version": "0.0.8",
+    "version": "0.1.0",
     "publisher": "abs-models-org",
     "author": {
         "name": "Rudolf Schlatte"
@@ -115,15 +115,15 @@
         "which": "^3.0.1"
     },
     "devDependencies": {
-        "@types/vscode": "^1.95.3",
         "@types/mocha": "^10.0.10",
         "@types/node": "20.x",
+        "@types/vscode": "^1.95.3",
         "@types/which": "^3.0.0",
         "@typescript-eslint/eslint-plugin": "^8.17.0",
         "@typescript-eslint/parser": "^8.17.0",
         "@vscode/test-cli": "^0.0.10",
         "@vscode/test-electron": "^2.4.1",
-        "typescript": "^5.7.2",
-        "eslint": "^9.16.0"
+        "eslint": "^9.16.0",
+        "typescript": "^5.7.2"
     }
 }
