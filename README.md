@@ -22,11 +22,11 @@ two items to `abs.compileOptions`: `-jar` and `/path/to/absfrontend.jar`.
 
 ## Installing
 
-To install the latest released version, download the `.vsix` file from https://github.com/abstools/abs-vs-code/releases/latest (currently `abs-0.0.8.vsix`).
+To install the latest released version, download the `.vsix` file from https://github.com/abstools/abs-vs-code/releases/latest
    
 ### Installing from the Command Line
 
-Run `code --install-extension abs-0.0.8.vsix`
+Run `code --install-extension` with the `.vsix` file downloaded from https://github.com/abstools/abs-vs-code/releases/latest
 
 ### Installing from inside Visual Studio Code
 
@@ -38,7 +38,7 @@ Run `code --install-extension abs-0.0.8.vsix`
    <img alt="First click 'Extensions', then the horizontal dots menu at the top of the list, then 'Install from VSIX...'" src="images/installing.png">
    </picture>
 
-3. In the file browser, choose the `abs-0.0.8.vsix` file downloaded from https://github.com/abstools/abs-vs-code/releases/latest .
+3. In the file browser, choose the `.vsix` file downloaded from https://github.com/abstools/abs-vs-code/releases/latest .
 
 ### Running an unreleased version
 

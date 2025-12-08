@@ -10,6 +10,10 @@ file from inside the editor.
 
 ## Release Notes
 
+### 0.1.0
+
+- Security release
+
 ### 0.0.8
 
 - Add snippets for `map`, `filter`, `foldl`, `foldr`.
