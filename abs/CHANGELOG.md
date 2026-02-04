@@ -14,6 +14,12 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Fixed
 
+## [0.1.1]
+
+### Fixed
+
+Update dependencies.
+
 ## [0.1.0]
 
 ### Fixed
@@ -86,7 +92,8 @@ Released 2023-03-16
 
 - Initial release
 
-[Unreleased]: https://github.com/abstools/abs-vs-code/compare/HEAD...v0.1.0
+[Unreleased]: https://github.com/abstools/abs-vs-code/compare/HEAD...v0.1.1
+[0.1.1]: https://github.com/abstools/abs-vs-code/compare/v0.1.1...v0.1.0
 [0.1.0]: https://github.com/abstools/abs-vs-code/compare/v0.1.0...v0.0.8
 [0.0.8]: https://github.com/abstools/abs-vs-code/compare/v0.0.8...v0.0.7
 [0.0.7]: https://github.com/abstools/abs-vs-code/compare/v0.0.7...v0.0.6
