@@ -10,6 +10,10 @@ file from inside the editor.
 
 ## Release Notes
 
+### 0.1.1
+
+- Dependency updates
+
 ### 0.1.0
 
 - Security release
