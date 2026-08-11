@@ -3,7 +3,7 @@
     "displayName": "ABS",
     "description": "Support for the Abs language",
     "icon": "images/ABS_logo.png",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "publisher": "abs-models-org",
     "author": {
         "name": "Rudolf Schlatte"
@@ -18,7 +18,7 @@
         "url": "https://github.com/abstools/abs-vs-code/issues"
     },
     "engines": {
-        "vscode": "^1.95.3"
+        "vscode": "^1.120.0"
     },
     "categories": [
         "Programming Languages"
@@ -119,7 +119,7 @@
         "@types/which": "^3.0.4",
         "@typescript-eslint/eslint-plugin": "^8.60.0",
         "@typescript-eslint/parser": "^8.60.0",
-        "@vscode/test-cli": "^0.0.11",
+        "@vscode/test-cli": "^0.0.15",
         "@vscode/test-electron": "^3.0.0",
         "eslint": "^10.4.0",
         "typescript": "^5.7.2"
